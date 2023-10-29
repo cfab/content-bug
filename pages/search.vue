@@ -11,9 +11,10 @@
 </template>
 
 <script lang="ts" setup>
-import {computed} from 'vue'
 const search  = ref('')
-const results = await searchContent('laboris') // hardcoded but should be search.value
+const results = searchContent('laboris')
+//const results = await searchContent('laboris') // not working either with await
+console.log('results :>> ', results); // not working
 </script>
 
 <style>
